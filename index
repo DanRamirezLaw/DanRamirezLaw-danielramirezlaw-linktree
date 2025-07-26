@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect with Law Offices of Daniel R. Ramirez</title>
+  <style>
+    body {
+      position: relative;
+      z-index: 1;
+      font-family: 'Times New Roman', serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+    .container {
+      background-color: #0e1132;
+      position: relative;
+      z-index: 1;
+      max-width: 450px;
+      margin: auto;
+      padding: 0 0px 0;
+      border-radius: 0;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    header {
+      text-align: center;
+      padding: 0;
+    }
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 10px 0 0;
+    }
+    .contact-icons a {
+      background: #0e1132;
+      padding: 8px;
+      border-radius: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .contact-icons img {
+      width: 40px;
+      height: 40px;
+    }
+    section { margin: 0 0 10px 0; }
+    .two-columns {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    @media (min-width: 480px) {
+      .two-columns {
+        justify-content: center;
+        flex-direction: row;
+      }
+    }
+    h2 {
+      text-align: center;
+      color: #0e1132;
+      margin-bottom: 10px;
+    }
+    .link-box {
+      background-color: #b80c09;
+      border: none;
+      border-radius: 12px;
+      padding: 12px;
+      margin: 8px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .link-box:hover {
+      background-color: #a00a07;
+    }
+    .link-box img {
+      width: 28px;
+      height: 28px;
+    }
+    .link-box span span {
+      font-weight: normal;
+      font-size: 0.75rem;
+    }
+    .link-box span strong {
+      font-size: 0.875rem;
+    }
+    footer {
+      font-size: 0.5rem;
+      text-align: center;
+      padding: 10px 0;
+      background-color: #b80c09;
+      color: #fff;
+      margin: 0;
+    }
+    a { text-decoration: none; }
+    .watermark-area {
+      position: relative;
+    }
+    .watermark-area::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-image: url('https://i.imgur.com/SGuZtJE.png');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+      opacity: 0.1;
+      pointer-events: none;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://i.imgur.com/qQkbdee.png" alt="Law Office Header Logo" style="max-width: 300px; display: block; margin: 0 auto;" />
+      <img src="https://i.imgur.com/5BB2MeQ.png" alt="Secondary Header Image" style="max-width: 450px; display: block; margin: 0px auto;" />
+    </header>
+    <div class="watermark-area">
+      <div class="contact-icons">
+        <a href="tel:+12149416500"><img src="https://cdn-icons-png.flaticon.com/512/16566/16566077.png" alt="Phone"></a>
+        <a href="sms:+12149416500"><img src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Messages-512.png" alt="Message"></a>
+        <a href="mailto:info@danielramirezlaw.com"><img src="https://freepngimg.com/thumb/iphone/68620-icons-memo-outlook.com-computer-iphone-email.png" alt="Email"></a>
+        <a href="https://maps.google.com/?q=206+Sunset+Ave,+Dallas,+TX" target="_blank"><img src="https://purepng.com/public/uploads/large/purepng.com-maps-icon-ios-7symbolsiconsapple-iosiosios-7-iconsios-7-72152259661718czv.png" alt="Map"></a>
+        <a href="https://www.danielramirezlaw.com" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/016/716/476/non_2x/internet-browser-icon-free-png.png" alt="Website" style="width: 40px; height: 40px;"></a>
+      </div>
+      <section class="two-columns">
+        <div>
+          <h2 style="font-size: 0.9375rem; line-height: 1.2;
+                     text-align: center;"><span style="color: #ffffff;">¡Déjenos una Reseña!</span><br/><span style="color: #ffffff; font-weight: normal;">Leave us a Review!</span></h2>
+          <a class="link-box" href="https://search.google.com/local/writereview?placeid=ChIJCfN0LY6ZToYR3EG94GX3shg" target="_blank">
+            <img src="https://i.imgur.com/fSIs32m.png" alt="Google Icon">
+            <span><strong>Reseña en Google</strong><br/><span>Google Review</span></span>
+          </a>
+          <a class="link-box" href="https://www.facebook.com/danramirezlawoffice/reviews/" target="_blank">
+            <img src="https://i.imgur.com/FGfXGlE.png" alt="Facebook Icon">
+            <span><strong>Reseña en Facebook</strong><br/><span>Facebook Review</span></span>
+          </a>
+        </div>
+        <div>
+          <h2 style="font-size: 0.9375rem; line-height: 1.2;
+                     text-align: center;"><span style="color: #ffffff;">¡Conéctese con Nosotros!</span><br/><span style="color: #ffffff; font-weight: normal;">Connect with us!</span></h2>
+          <a class="link-box" href="https://o2o.to/i/QzrgYh" target="_blank">
+            <img src="https://purepng.com/public/uploads/large/purepng.com-contacts-icon-ios-7symbolsiconsapple-iosiosios-7-iconsios-7-721522596526x9dss.png" alt="Save Contact">
+            <span><strong>Guarde nuestro contacto</strong><br/><span>Save Our Contact</span></span>
+          </a>
+          <a class="link-box" href="https://outlook.office365.com/book/OnlineBooking@danielramirezlaw.com/" target="_blank">
+            <img src="https://help.apple.com/assets/65D689DF13D1B1E17703916F/65D689E0D302CF88600FDD25/en_US/941b3852f089696217cabe420c7a459f.png" alt="Schedule">
+            <span><strong>Agende una consulta</strong><br/><span>Schedule a Consultation</span></span>
+          </a>
+        </div>
+      </section>
+      <section style="text-align:center; margin-top:20px;">
+        <a href="https://www.instagram.com/lawofficeofdanielramirez/" target="_blank"><img src="https://i.imgur.com/WVC5Xoa.png" alt="Instagram" style="width:32px; height:32px; margin:0 6px;"></a>
+        <a href="https://www.tiktok.com/@danielramirezoffice" target="_blank"><img src="https://i.imgur.com/4IRZs8I.png" alt="TikTok" style="width:32px; height:32px; margin:0 6px;"></a>
+        <a href="https://www.facebook.com/danramirezlawoffice/" target="_blank"><img src="https://i.imgur.com/FGfXGlE.png" alt="Facebook" style="width:32px; height:32px; margin:0 6px;"></a>
+        <a href="https://api.whatsapp.com/send?phone=%2B12148622277" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Whatsapp-512.png" alt="WhatsApp" style="width:32px; height:32px; margin:0 6px;"></a>
+      </section>
+    </div>
+    <footer>
+      Law Offices of Daniel R. Ramirez<br/>
+      206 Sunset Ave, Dallas, TX 75208<br/>
+      Ph: (214)-941-6500 | Info@DanielRamirezLaw.com
+    </footer>
+  </div>
+</body>
+</html>
