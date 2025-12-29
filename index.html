@@ -73,10 +73,11 @@
       margin: 0 auto;
     }
 
+    /* keeps watermark behind content */
     .content {
       position: relative;
       padding: var(--pad);
-      isolation: isolate; /* keeps watermark behind content */
+      isolation: isolate;
     }
 
     .content::before{
@@ -85,11 +86,11 @@
       inset: 0;
       background-image: url('https://i.imgur.com/SGuZtJE.png');
       background-repeat: no-repeat;
-      background-position: bottom center;
-      background-size: min(520px, 95%);
+      background-position: top;
+      background-size: contain;
       opacity: .10;
       pointer-events: none;
-      z-index: -1;
+      z-index: 0;
     }
 
     .contact-icons {
@@ -97,24 +98,17 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: clamp(10px, 3vw, 10px);
-      margin-top: clamp(1px, 3vw, 2px);
+      margin: 10px 0 0;
     }
 
     .contact-icons a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 5px;
-      background: transparent;
-      border-radius: 14px;
-      box-shadow: 0 2px 8px rgba(0,0,0,.18);
-      transition: transform .12s ease;
+      padding: clamp(8px, 3.5vw, 10px);
+      border-radius: 0;
     }
 
     .contact-icons img {
-      width: clamp(42px, 9vw, 78px);
-      height: clamp(42px, 9vw, 78px);
-      flex: 0 0 auto;
+      width: clamp(28px, 9vw, 78px);
+      height: clamp(28px, 9vw, 78px);
     }
 
     /* Responsive two column layout */
@@ -122,24 +116,14 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: var(--gap);
-      margin-top: 5px;
     }
-    @media (min-width: 520px){
+    @media (min-width: 430px){
       .two-columns { grid-template-columns: 1fr 1fr; }
     }
-
     h2 { 
-      font-size: var(--text-md); line-height: 1.25;}
-    .link-box span strong { font-size: var(--text-md); }
-    .link-box span span { font-size: var(--text-sm); }
-    .contact-icons img,
-    .link-box img,
-    .social img {
-      width: var(--icon-md);
-      height: var(--icon-md);
-        }
-        h2 span[style*="font-weight: normal"]{
-          opacity: .95;
+      font-size: var(--text-md); 
+      line-height: 1.25;
+      margin-bottom: 10px;
     }
 
     .link-box {
@@ -158,7 +142,6 @@
       transition: background-color .2s ease, transform .12s ease;
     }
     .link-box:hover { background: var(--redHover); }
-    .link-box:active { transform: scale(.99); }
 
     .link-box img {
       width: var(--icon-md);
@@ -170,13 +153,11 @@
       display: block;
       font-size: var(--text-md);
       line-height: 1.15;
-      opacity: .95;
     }
     .link-box span span {
       display: block;
       font-weight: normal;
       font-size: var(--text-sm);
-      opacity: .95;
       line-height: 1.15;
     }
 
